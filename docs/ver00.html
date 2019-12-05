@@ -1,35 +1,22 @@
 <html>
-<head>
-<script>
-function fibonacci (number) {
-     //if number is 1 or 2  just return 1
-    var num 
-    if (num==1) or (num==2) {return 1}
-    
-     //otherwise return sum of fibonacci of previous two numbers
-    else {return ((num-1)+(num-2))}
-     }
+    <head>
+        <script>
+            var f1=0,f2=1,f3;
+    var i;
+            
+    var n=prompt("How many sequences of the Fibonacci number do you want to find?");
+    document.write("the fibonacci series is "+"<br/>");
 
-function compute_and_display () {
-     // get the value from the input
-    document.getElementById(num)
-     //result = fibonacci(input)
-    result = return ((num-1)+(num-2))
-     //display result on the webpage
-    compute_and_display(result)
-     }
+   for(i=2;i<=n;i++)
+   {
 
-</script>
-</head>
-<body>
-    
-<!-- USER INPUTS A NUMBER -->
-num = oninput("Enter a number in the fibonacci sequence: ")
-    
-<!--BUTTON THAT RUNS "compute_and_display()" -->
-<button type="button" onclick="compute_and_display">"Cumpute and Display"</button>
-    
-<p id="output_goes_here"></p>
-    
-</body>
+       f3=f1+f2;
+       f1=f2;
+       f2=f3;
+     document.write(f3+"<br/>");   
+   }
+  
+
+        </script>
+    </head>
 </html>
